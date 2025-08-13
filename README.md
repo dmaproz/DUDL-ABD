@@ -1,2 +1,4 @@
 # DUDL-ABD
-Deep Understanding Deep Learning   oiiiiieee
+Deep Understanding Deep Learning
+
+# Oi genteeee
