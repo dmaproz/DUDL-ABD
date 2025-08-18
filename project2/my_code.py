@@ -16,6 +16,9 @@ from torch.utils.data import DataLoader,TensorDataset
 from sklearn.model_selection import train_test_split
 
 # for number-crunching
+
+#Antes de rodar, rodar a seguinte linha no terminal: .\venv\Scripts\activate
+
 import numpy as np
 
 # for dataset management
@@ -24,8 +27,11 @@ import pandas as pd
 # for data visualization
 import matplotlib.pyplot as plt
 import seaborn as sns
-from IPython.display import set_matplotlib_formats
-set_matplotlib_formats('svg')
+import matplotlib_inline.backend_inline
+
+if isinstance('svg', str):
+  ipython_format = ['svg']
+matplotlib_inline.backend_inline.set_matplotlib_formats(*ipython_format)
 
 # import the data
 url  = 'https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/processed.cleveland.data'
