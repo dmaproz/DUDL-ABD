@@ -64,13 +64,13 @@ class AddingMachine(nn.Module):
         n_units: Number of units in hidden layers
         n_layers: Number of hidden layers
     """
-    def __init__(self, n_units=16, n_layers=2):
+    def __init__(self, n_units=16, n_layers=2, input_layer_nodes=2):
         super().__init__()
 
         self.n_layers = n_layers
 
         # Input layer: 2 inputs -> n_units
-        self.input_layer = nn.Linear(2, n_units)
+        self.input_layer = nn.Linear(input_layer_nodes, n_units)
 
         # Hidden layers
         self.hidden_layers = nn.ModuleList([
