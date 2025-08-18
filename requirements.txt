@@ -4,3 +4,7 @@ matplotlib>=3.5.0
 matplotlib-inline
 numpy<2
 ipython
+pandas
+seaborn
+scipy
+
